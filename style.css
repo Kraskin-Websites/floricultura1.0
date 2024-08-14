@@ -1,0 +1,432 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #ff6b6b;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+header .navbar {
+    display: flex;
+    gap: 2rem;
+}
+
+header .navbar a {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+header .icons a {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+}
+
+#toggler {
+    display: none;
+}
+
+header label {
+    display: none;
+}
+
+/* Estilos da seção Home */
+.home {
+    background: url('./background.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home h3 {
+    font-size: 4rem;
+}
+
+.home span {
+    font-size: 2rem;
+    display: block;
+    margin: 1rem 0;
+}
+
+.home p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.home .btn {
+    padding: 1rem 2rem;
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+/* Estilos da seção Sobre */
+.about {
+    padding: 8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about .video-container video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about .content {
+    max-width: 50rem;
+}
+
+.about .heading {
+    font-size: 2.4rem;
+    color: #ff6b6b;
+    margin-bottom: 2rem;
+}
+
+.about h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Seção de ícones */
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+    background: #f7f7f7;
+}
+
+.icons-container .icons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.icons-container .icons img {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.icons-container .icons h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.icons-container .icons span {
+    font-size: 1.4rem;
+    color: #666;
+}
+
+/* Seção de Produtos */
+.products {
+    padding: 8rem 2rem;
+    background: #f7f7f7;
+}
+
+.products .heading {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.products .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.products .box {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.products .box:hover {
+    transform: translateY(-10px);
+}
+
+.products .box img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.products .content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.products .price {
+    color: #ff6b6b;
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
+
+.products .price span {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+}
+
+.products .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.products .cart-btn {
+    padding: 0.5rem 1rem;
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Seção de Revisões */
+.review {
+    padding: 8rem 2rem;
+}
+
+.review .heading {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.review .box-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review .box {
+    background: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 30rem;
+}
+
+.review .box img {
+    width: 8rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.review .stars i {
+    color: #ff6b6b;
+}
+
+/* Seção de Contato */
+.contact {
+    padding: 8rem 2rem;
+    background: #f7f7f7;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact .map {
+    flex: 1;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.contact form {
+    flex: 1;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact form h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.contact form .box {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Seção de Rodapé */
+.footer {
+    background: #333;
+    padding: 4rem 2rem;
+    color: #fff;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.footer .box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer .box a {
+    color: #fff;
+    font-size: 1.4rem;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: #ddd;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        background: #ff6b6b;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    header .navbar a {
+        padding: 1rem 0;
+        font-size: 2rem;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        background: #ff6b6b;
+        border-bottom: 1px solid #fff;
+    }
+
+    header label {
+        display: block;
+        font-size: 2.5rem;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #toggler:checked ~ .navbar {
+        left: 0;
+    }
+
+    .home .content {
+        padding: 0 2rem;
+    }
+
+    .about .row {
+        flex-direction: column;
+    }
+
+    .icons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products .box-container {
+        flex-direction: column;
+    }
+
+    .review .box-container {
+        flex-direction: column;
+    }
+
+    .contact .row {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
